@@ -4,7 +4,9 @@
   "description": "\"Browser based game\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/madivira/defender-game/issues"
   },
-  "homepage": "https://github.com/madivira/defender-game#readme"
+  "homepage": "https://github.com/madivira/defender-game#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
 }
